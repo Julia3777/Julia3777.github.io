@@ -25,7 +25,8 @@
 
 <body>
   <header id="main">
-    <div class="row main-head">
+    <div class="container">
+      <div class="row main-head">
       <div class="col-lg-4 main-head-logo">
         <img src="img/шапка/logo.png" alt="логотип">
         <p><span>ТОРГОВЫЙ ДОМ</span><br>Центр Современных Технологий</p>
@@ -37,17 +38,29 @@
         <p class="tell"><span>+7 495</span> 555 77 88<br><span class="address">Москва, ул. Угрешская, д.2, стр. 74</span>
       </div>
       </div> <!--Шапка-->
+    </div>
 
-      <div class="row main-nav">
-        <nav class="main-nav-menu">
-          <a href="#">ГЛАВНАЯ</a>
-          <a href="#about_company">О КОМПАНИИ</a>
-          <a href="#products">КАТАЛОГ ПРОДУКЦИИ</a>
-          <a href="#">ДИЛЕРАМ</a>
-          <a href="#contacts">КОНТАКТЫ</a>
-        </nav>
-      </div> <!--Навигация, может ее нужно было делать ч/з Бутстрап?-->
-      <div class="row main-screen-slider">
+      <div class="container">
+        <div class="row main-nav">
+          <div class="col-xs-2 main-nav-menu">
+              <a href="#">ГЛАВНАЯ</a>
+          </div>
+          <div class="col-xs-3 main-nav-menu">
+              <a href="#about_company">О КОМПАНИИ</a>
+          </div>
+          <div class="col-xs-3 main-nav-menu">
+              <a href="#products">КАТАЛОГ ПРОДУКЦИИ</a>
+          </div>
+          <div class="col-xs-2 main-nav-menu">
+             <a href="#">ДИЛЕРАМ</a> 
+          </div>
+          <div class="col-xs-2 main-nav-menu">
+              <a href="#contacts">КОНТАКТЫ</a>
+          </div>
+      </div> <!--Навигация-->
+      </div>
+      <div class="container">
+        <div class="row main-screen-slider">
         <div class="col-xs-6 col-xs-offset-6 main-screen-slider-box">
           <div class="main-screen-slider-box-item">
             <h1>СРЕДСТВА ЗАЩИТЫ ГЛАЗ</h1>
@@ -81,6 +94,7 @@
           </div>
         </div>
       </div> <!--Слайдер для главного экрана-->
+      </div>
     </header>
 
     <section id="products">

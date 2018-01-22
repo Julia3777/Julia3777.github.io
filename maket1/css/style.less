@@ -1,4 +1,7 @@
 
+body {
+margin: 0;
+}
 /*--Fonts files--*/
 .opn-reg {
 	font-family: 'Roboto', sans-serif;
@@ -35,12 +38,13 @@
 		background-color: @grey;
 		&-logo {
 			img {
-				vertical-align: inherit;
+				padding-bottom: 21px;
 			}
 			p {
 				display: inline-block;
-				margin-top: 20px;
-				margin-bottom: 27px;
+				padding-top: 22px;
+				padding-left: 16px;
+				line-height: 1.2;
 				span {
 					.opn-black;
 					color: @blue;
@@ -53,7 +57,8 @@
 		}
 		&-info {
 			p {
-				margin-top: 22px;
+				padding-top: 22px;
+				line-height: 1.5;
 				.opn-reg;
 				color: @black;
 				font-size: 16px;
@@ -61,7 +66,8 @@
 		}
 		&-contacts {
 			p.tell {
-				margin-top: 22px;
+				padding-top: 22px;
+				line-height: 0.9;
 				.opn-bold;
 				font-size: 24px;
 				span {
@@ -78,24 +84,23 @@
 	&-nav {
 		height: 70px;
 		background-color: @blue;
-		&:hover {
-			cursor: pointer;
-		}
 		&-menu {
-			padding-top: 26px;
-			padding-bottom: 26px;
+			text-align: center;
+			&:hover {
+					background-color: rgba(0,0,0,0.102);
+					cursor: pointer;
+					}
 			a {
 				.opn-bold;
 				font-size: 14px;
 				color: @white;
-				padding: 0px 70px 0px 70px;
 				&:hover {
-				text-decoration: none;
-				background-color: rgba(0,0,0,0.102);
+					color: @white;
+				}
 			}
-		}
+				
+		} 
 	}
-}
 	&-screen-slider {
 		height: 420px;
 		background-image: url(../img/bgg.jpg);
@@ -198,4 +203,19 @@
 			}
 		}
 	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+	
+}
+@media (min-width: 1601px) {
+	
 }

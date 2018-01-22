@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 /*--Fonts files--*/
 .opn-reg {
   font-family: 'Roboto', sans-serif;
@@ -26,12 +29,13 @@
   background-color: #f6f6f6;
 }
 .main-head-logo img {
-  vertical-align: inherit;
+  padding-bottom: 21px;
 }
 .main-head-logo p {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 27px;
+  padding-top: 22px;
+  padding-left: 16px;
+  line-height: 1.2;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #353535;
@@ -44,14 +48,16 @@
   font-size: 20px;
 }
 .main-head-info p {
-  margin-top: 22px;
+  padding-top: 22px;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #353535;
   font-size: 16px;
 }
 .main-head-contacts p.tell {
-  margin-top: 22px;
+  padding-top: 22px;
+  line-height: 0.9;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -74,18 +80,16 @@
 }
 .main-nav-menu {
   padding-top: 26px;
-  padding-bottom: 26px;
+  text-align: center;
+}
+.main-nav-menu-box:hover {
+  background-color: rgba(0, 0, 0, 0.102);
 }
 .main-nav-menu a {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
-  padding: 0px 70px 0px 70px;
-}
-.main-nav-menu a:hover {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.102);
 }
 .main-screen-slider {
   height: 420px;
