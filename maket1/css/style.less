@@ -1,6 +1,6 @@
 
 body {
-margin: 0;
+margin: 0 auto;
 }
 /*--Fonts files--*/
 .opn-reg {
@@ -29,136 +29,187 @@ margin: 0;
 @white: #ffffff;
 @grey: #f6f6f6;
 @black: #353535;
+@footer: #108ab6;
 
 /* Main section */
 
-.main {
-	&-head {
-		height: 90px;
-		background-color: @grey;
-		&-logo {
-			img {
-				padding-bottom: 21px;
-			}
-			p {
-				display: inline-block;
-				padding-top: 22px;
-				padding-left: 16px;
-				line-height: 1.2;
-				span {
-					.opn-black;
-					color: @blue;
-					font-size: 20px;
-				}
-				.opn-reg;
-				color: @black;
-				font-size: 16px;
-			}
-		}
-		&-info {
-			p {
-				padding-top: 22px;
-				line-height: 1.5;
-				.opn-reg;
-				color: @black;
-				font-size: 16px;
-			}
-		}
-		&-contacts {
-			p.tell {
-				padding-top: 22px;
-				line-height: 0.9;
-				.opn-bold;
-				font-size: 24px;
-				span {
-					color: @blue;
-				}
-				span.address {
-					.opn-reg;
-					font-size: 15px;
-					color: @black;
-				}
-			}
-		}
-	}
-	&-nav {
-		height: 70px;
-		background-color: @blue;
-		&-menu {
-			text-align: center;
-			&:hover {
-					background-color: rgba(0,0,0,0.102);
-					cursor: pointer;
-					}
-			a {
-				.opn-bold;
-				font-size: 14px;
-				color: @white;
-				&:hover {
-					color: @white;
-				}
-			}
-				
-		} 
-	}
-	&-screen-slider {
-		height: 420px;
-		background-image: url(../img/bgg.jpg);
-		background-position: center center;
-		background-position: no-repeat;
-		background-size: cover;
-		&-box-item {
-			h1 {
-				padding-top: 78px;
-				.opn-bold;
-				font-size: 44px;
-				color: @white;
-				margin-bottom: 25px;
-			}
-			&-line {
-				width: 250px;
-				height: 3px;
-				border-radius: 45px;
-				background-color: @blue;
-			}
-			p {
-				.opn-lgt;
-				font-size: 17px;
-				color: @white;
-				margin-top: 25px;
-				margin-bottom: 40px;
-			}
-			button {
-				background-color: @blue;
-				border: none;
-				border-radius: 5px;
-				padding: 18px 45px;
-				.opn-bold;
-				color: @white;
-				font-size: 13px;
-			}
-		}
-	}
-}
-
-/* Products section */
-
-.products {
+#main {
 	background-color: @grey;
-	&-row {
-		margin-top: 48px;
+}
+.main-head {
+	&-logo {
+		img {
+			padding-bottom: 21px;
+		}
+		p {
+			display: inline-block;
+			padding-top: 22px;
+			padding-left: 16px;
+			line-height: 1.2;
+			span {
+			.opn-black;
+			color: @blue;
+			font-size: 20px;
+		}
+			.opn-reg;
+			color: @black;
+			font-size: 16px;
+		}
+	}
+	&-info {
+		p {
+			padding-top: 22px;
+			line-height: 1.5;
+			.opn-reg;
+			color: @black;
+			font-size: 16px;
+		}
+	}
+	&-contacts {
+		p.tell {
+			padding-top: 22px;
+			line-height: 0.9;
+			.opn-bold;
+			font-size: 24px;
+			span {
+				color: @blue;
+			}
+			span.address {
+				.opn-reg;
+				font-size: 15px;
+				color: @black;
+			}
+		}
 	}
 }
-.products-row-glasses {
-			background-color: @white;
-			margin-left: 30px;
-			display: inline-block;
-			height: 310px;
-			width: 265px;
+#nav {
+	background-color: @blue;
+}
+.nav-menu {
+	&-item {
+		position: relative;
+		list-style: none;
+		float: left;
+		padding: 16px 0;
+		text-align: center;
+		a {
+			display: block;
+			.opn-bold;
+			font-size: 14px;
+			color: @white;
+			text-decoration: none;
+			padding: 0 60px;
+			border-color: @black;
 		}
+		&:hover {
+			background-color: @blue-hover;
+		}
+	}
+} 
+
+#main-screen {
+	background-image: url(../img/bg-1.jpg);
+	background-position: center top;
+	background-position: no-repeat;
+	background-size: cover;
+}
+.main-screen-slider-box {
+	margin-top: 70px;
+	z-index: 99;
+	padding-right: 0px;
+	padding-left: 0px;
+	h1 {
+		.opn-bold;
+		font-size: 43px;
+		color: @white;
+	}
+	&-item-line {
+		width: 251px;
+		height: 3px;
+		background-color: @blue;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	p {
+		.opn-lgt;
+		font-size: 17px;
+		color: @white;
+		margin-bottom: 40px;
+	}
+	button {
+		.opn-bold;
+		font-size: 13px;
+		color: @white;
+		background-color: @blue;
+		border: none;
+		border-radius: 5px;
+		padding: 18px 45px;
+		margin-bottom: 116px;
+	}
+}
+/* Products section */
+#products {
+	background-color: @grey;
+	padding-top: 70px;
+}
+.col-md-6.products-row {
+	background: @white;
+	width: 556px;
+	height: 310px;
+	margin-bottom: 30px;
+	h3 {
+		display: inline-block;
+		.opn-med;
+		font-size: 21px;
+		vertical-align: middle;
+	}
+	img {
+		padding-top: 45px;
+		padding-left: 20px;
+	}
+}
+.col-md-3.products-row {
+	background: @white;
+	width: 264px;
+	height: 310px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	h3 {
+		.opn-med;
+		font-size: 21px;
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: auto;
+		padding-top: 34px;
+	}
+}
+.col-md-4.products-row {
+	background: @white;
+	width: 360px;
+	height: 200px;
+	margin-left: 31px;
+	margin-bottom: 31px;
+	h3 {
+		.opn-med;
+		font-size: 21px;
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: auto;
+	}
+}
+.col-md-4.products-row:first-child {
+	margin-left: 0px;
+}
+
 
 /* Section about company */
-
+#about_company {
+	background-color: @white;
+}
 .company {
 	h3 {
 		margin-top: 50px;
@@ -190,7 +241,9 @@ margin: 0;
 }
 
 /* Contacts section */
-
+#contacts {
+	background-color: @grey;
+}
 .contacts {
 	&-info {
 		&-item {
@@ -203,6 +256,9 @@ margin: 0;
 			}
 		}
 	}
+}
+#footer {
+	background-color: @footer;
 }
 @media (min-width: 481px) and (max-width: 767px) {
 
@@ -218,4 +274,3 @@ margin: 0;
 }
 @media (min-width: 1601px) {
 	
-}
