@@ -31,6 +31,8 @@ margin: 0 auto;
 @black: #353535;
 @footer: #108ab6;
 @hover: #89d6f2;
+@border: #1a96c2;
+@bg-menu: #2e3743;
 
 /* Main section */
 
@@ -86,24 +88,30 @@ margin: 0 auto;
 #nav {
 	background-color: @blue;
 }
-.nav-menu {
-	&-item {
-		position: relative;
-		list-style: none;
-		float: left;
-		padding: 16px 0;
-		text-align: center;
-		a {
-			display: block;
-			.opn-bold;
-			font-size: 14px;
-			color: @white;
-			text-decoration: none;
-			padding: 0 60px;
-			border-color: @black;
-		}
-		&:hover {
-			background-color: @blue-hover;
+.nav {
+	margin-bottom: 0px;
+	&-menu {
+		&-item {
+			position: relative;
+			list-style: none;
+			float: left;
+			padding: 16px 0;
+			text-align: center;
+			a {
+				display: block;
+				.opn-bold;
+				font-size: 14px;
+				color: @white;
+				text-decoration: none;
+				padding: 0 60px;
+				border-right: 1px dotted @border;
+			}
+			a:first-child {
+				border-left: 1px dotted @border;
+			}
+			&:hover {
+				background-color: @blue-hover;
+			}
 		}
 	}
 } 
@@ -150,6 +158,20 @@ margin: 0 auto;
 		text-transform: uppercase;
 	}
 }
+ul.slick-dots {
+	margin-left: -56%;
+}
+.slick-dots li {
+	padding:  0px 20px;
+	button {
+		background-color: @white;
+		width: 34px;
+		height: 5px;
+	}
+}
+.slick-dots li button:active,.slick-dots li button:focus {
+	background-color: @blue;
+}	
 /* Products section */
 #products {
 	background-color: @grey;
@@ -249,6 +271,119 @@ margin: 0 auto;
 .col-md-4.products-row:first-child {
 	margin-left: 0px;
 }
+/* Products section (Каталог продукции)*/
+.products-box [type="checkbox"],
+label.toggleMenu,
+label.toggleSubmenu {
+	display: none;
+}
+.products-box {
+	margin: 0px;
+	padding: 0px;
+	label.toggleMenu {
+		display: block;
+		background-color: @bg-menu;
+		padding: 15px 75px 15px 15px;
+		border-radius: 4px;
+		margin-bottom: 1px;
+		i.fa {
+			color: @white;
+			span {
+				.opn-med;
+				font-size: 16px;
+				padding-left: 10px;
+			}
+		}
+	}
+	ul {
+		padding-left: 0; 
+		li {
+			list-style: none;
+			background-color: @blue;
+			margin-bottom: 1px;
+			padding: 15px 40px 15px 12px;
+			a { 
+				.opn-lgt;
+				color: @white;
+				font-size: 15px;
+			}
+			ul {
+				position: absolute;
+				display: none;
+				top: 0;
+				left: 0;
+				width: 100%;
+				li {
+					position: relative;
+					top: 15px;
+					a { 
+						.opn-lgt;
+						color: @white;
+						padding-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+	ul li input.toggleSubmenu:checked ~ ul {
+		display: block;
+		position: relative;
+	}	
+	ul li label.toggleSubmenu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block;
+	}
+	ul li input.toggleSubmenu:checked ~ ul li {
+		background-color: @blue-hover;
+	}	
+}
+.wrapper {
+	display: block;
+	h2 {
+		.opn-reg;
+		font-size: 26px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.line {
+		margin-top: 15px;
+		margin-bottom: 25px;
+		width: 135px;
+		height: 3px;
+		background: @blue;
+	}
+}
+.slider-nav .product-box {
+	width: 80px;
+	height: auto;
+	img {
+		margin: 10px;
+		vertical-align: middle;
+		width: 50px;
+		height: auto;
+	}
+}
+
+.slider-for .product-box {
+	img {
+		margin: 25px;
+		max-width: 100%;
+		height: auto;
+	}
+	p {
+		.opn-lgt;
+		font-size: 12px;
+		i {
+			padding-right: 10px;
+		}
+	}
+}
+
 
 
 /* Section about company */

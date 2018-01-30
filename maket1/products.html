@@ -42,9 +42,9 @@
   </header> <!--Шапка-->
 
   <section id="nav">
-    <div class="container nav">
-      <nav class="nav-menu">
-        <ul>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-menu">
           <li class="nav-menu-item">
             <a href="index.html">ГЛАВНАЯ</a>
           </li>
@@ -66,85 +66,82 @@
   </section> 
   
   <section id="products">
-    <div class="container products-box">
+    <div class="container">
       <div class="row">
         <div class="col-sm-3">
-          <nav>
-            <ul>
-              <li class="navigator">
-                <a href="#">Каталог продукции</a>
-                <ul>
-                  <li class="navigator-item">
-                    <a href="">Очки защитные</a>
-                    <ul>
-                      <li class="navigator-item-one"><a href="">Очки защитные закрытые</a></li>
-                      <li class="navigator-item-one"><a href="">Очки защитные открытые</a></li>
-                    </ul>
-                  </li>
-                  <li class="navigator-item"><a href="">Прозрачные маски</a></li>
-                  <li class="navigator-item"><a href="">Пластиковые очки с прямой вентиляцией</a></li>
-                  <li class="navigator-item"><a href="">Сварочные маски</a></li>
-                  <li class="navigator-item"><a href="">Очки-маски</a></li>
-                </ul>
-              </li>
-            </ul>
+          <nav class=" products-box">
+            <input type="checkbox" name="toggle" class="toggleMenu" id="menu">
+            <label for="menu" class="toggleMenu"><i class="fa fa-bars fa-2k"><span>Каталог продукции</span></i></label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                  <a href="">Очки защитные</a>
+                  <label for="sub_m1" class="toggleSubmenu"></label>
+                  <ul>
+                    <li><a href="">Очки защитные закрытые</a></li>
+                    <li><a href="">Очки защитные открытые</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Прозрачные маски</a></li>
+                <li><a href="">Пластиковые очки с прямой вентиляцией</a></li>
+                <li><a href="">Сварочные маски</a></li>
+                <li><a href="">Очки-маски</a></li>
+              </ul>
           </nav>
         </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-5"></div>
+        <div class="col-sm-9">
+          <div class="wrapper">
+            <h2>Очки защитные Kilimandjaro</h2>
+            <div class="line"></div>
+          </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="product-slider">
+                  <div class="slider-for">
+                    <div class="product-box">
+                      <img src="img/о продукции/1.png" alt="1">
+                      <p><i class="fa fa-search"></i>Наведите курсор, чтобы увеличить фото</p>
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/2.png" alt="2">
+                      <p><i class="fa fa-search"></i>Наведите курсор, чтобы увеличить фото</p>
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/3.png" alt="3">
+                      <p><i class="fa fa-search"></i>Наведите курсор, чтобы увеличить фото</p>
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/4.png" alt="4">
+                      <p><i class="fa fa-search"></i>Наведите курсор, чтобы увеличить фото</p>
+                    </div>
+                  </div>
+
+                  <div class="slider-nav">
+                     <div class="product-box">
+                      <img src="img/о продукции/1.png" alt="1">
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/2.png" alt="2">
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/3.png" alt="3">
+                    </div>
+                    <div class="product-box">
+                      <img src="img/о продукции/4.png" alt="4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <h3>Описание</h3>
+                <p>Очки рабочие защитные Kilimandjaro AB. Открытые защитные очки с прозрачной линзой из ударопрочного поликарбоната, боковая защита. Материал оправы – нейлон. Отверстия для крепления тесемки на концах дужек. Регулировка угла наклона линз и длины дужек. Оптический класс 1 (не имеют ограничения по длительности ношения). Маркировка линзы: 2C-1.2 1FT. Покрытие против царапин (AS) и запотевания (AF).</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- <section id="products">
-      <div class="container products">
-        <div class="row products">
-          <div class="col-md-6 products-row">
-            <img src="img/каталог/01.png" alt="Пластиковые очки с вентиляцией">
-            <h3>Прозрачные очки<br> с прямой вентиляцией</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-          <div class="col-md-3 products-row">
-            <img src="img/каталог/02.png" alt="Прозрачные маски">
-            <h3>Прозрачные маски</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-          <div class="col-md-3 products-row">
-            <img src="img/каталог/03.png" alt="Сварочные маски">
-            <h3>Сварочные маски</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-        </div>
-        <div class="row products">
-          <div class="col-md-4 products-row">
-            <img src="img/каталог/04.png" alt="Закрытые очки">
-            <h3>Закрытые очки</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-          <div class="col-md-4 products-row">
-            <img src="img/каталог/05.png" alt="Открытые очки">
-            <h3>Открытые очки</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-          <div class="col-md-4 products-row">
-            <img src="img/каталог/06.png" alt="Очки-маски">
-            <h3>Очки-маски</h3>
-            <div class="products-row-signature">
-              <a href="#"><button class="products-row-signature-btn">подробнее</button></a>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </section> Заготовка для каталога продукции, только начало...-->
 
     <footer id="footer">
       <div class="container footer">
@@ -231,6 +228,25 @@
           slidesToScroll: 3
         });
       });
+    </script>
+
+<!--Слайдер для просмотра продукции-->
+    <script>
+      $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
     </script>
     
   </body>
