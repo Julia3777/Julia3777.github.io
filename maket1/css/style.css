@@ -164,6 +164,11 @@ ul.slick-dots {
   background-color: #f6f6f6;
   padding-top: 70px;
 }
+#products_page {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 .col-md-6.products-row {
   background: #ffffff;
   width: 556px;
@@ -263,6 +268,21 @@ ul.slick-dots {
   margin-left: 0px;
 }
 /* Products section (Каталог продукции)*/
+#products {
+  padding-top: 20px;
+}
+p.aline {
+  margin: 21px 0px 26px 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+p.aline span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #cbcbcb;
+}
 .products-box [type="checkbox"],
 label.toggleMenu,
 label.toggleSubmenu {
@@ -295,9 +315,10 @@ label.toggleSubmenu {
   list-style: none;
   background-color: #13aee5;
   margin-bottom: 1px;
-  padding: 15px 40px 15px 12px;
+  padding: 15px 0px;
 }
 .products-box ul li a {
+  padding-left: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #ffffff;
@@ -320,11 +341,11 @@ label.toggleSubmenu {
   color: #ffffff;
   padding-bottom: 15px;
 }
-.products-box ul li input.toggleSubmenu:checked ~ ul {
+.products-box ul.check li.check input.toggleSubmenu:checked ~ ul {
   display: block;
   position: relative;
 }
-.products-box ul li label.toggleSubmenu {
+.products-box ul.check li.check label.toggleSubmenu {
   position: absolute;
   top: 0;
   left: 0;
@@ -333,7 +354,7 @@ label.toggleSubmenu {
   cursor: pointer;
   display: block;
 }
-.products-box ul li input.toggleSubmenu:checked ~ ul li {
+.products-box ul.check li.check input.toggleSubmenu:checked ~ ul li {
   background-color: #119cce;
 }
 .wrapper {
@@ -353,20 +374,37 @@ label.toggleSubmenu {
   height: 3px;
   background: #13aee5;
 }
+.box_for_slider {
+  width: 360px;
+  height: 510px;
+  border: 1px solid #e2e2e2;
+}
+.slider-nav-box {
+  margin: 0px 10px;
+}
 .slider-nav .product-box {
-  width: 80px;
-  height: auto;
+  display: flex;
+  align-items: center;
+  width: 83px;
+  height: 90px;
+  border: 1px solid #e2e2e2;
+  margin: 12px 2px 12px 0px;
 }
 .slider-nav .product-box img {
-  margin: 10px;
+  margin: 0 auto;
   vertical-align: middle;
   width: 50px;
   height: auto;
 }
-.slider-for .product-box img {
-  margin: 25px;
-  max-width: 100%;
-  height: auto;
+.slider-for .product-box {
+  height: 390px;
+  text-align: center;
+}
+.slider-for .product-box .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
 }
 .slider-for .product-box p {
   font-family: 'Roboto', sans-serif;
@@ -376,15 +414,66 @@ label.toggleSubmenu {
 .slider-for .product-box p i {
   padding-right: 10px;
 }
+.row_wrapper {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.slider-box .box {
+  width: 265px;
+  height: 300px;
+  border: 1px solid #e2e2e2;
+}
+.slider-box .box h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #13aee5;
+  text-align: center;
+}
+.slider-box .box p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+}
+.descript {
+  margin-left: 18px;
+}
+.descript h3 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+.descript p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: justify;
+}
 /* Section about company */
 #about_company {
+  padding-top: 50px;
   background-color: #ffffff;
+}
+#about_company_page {
+  padding-top: 0;
 }
 .company {
   margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: justify;
 }
 .company h3 {
-  margin-top: 50px;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -397,13 +486,10 @@ label.toggleSubmenu {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.company p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  text-align: justify;
+.company p .aline {
+  font-size: 13px;
 }
-.company p span.p {
+.company span.p {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -558,4 +644,24 @@ input.message {
 }
 .footer-item i {
   color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-box .box {
+    width: 200px;
+    height: 227px;
+    border: 1px solid #e2e2e2;
+  }
+  .slider-box .box h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #13aee5;
+    text-align: center;
+  }
+  .slider-box .box p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+  }
 }
