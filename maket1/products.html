@@ -27,14 +27,14 @@
   <header id="main">
     <div class="container">
       <div class="row main-head">
-        <div class="col-lg-4 main-head-logo">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 main-head-logo">
           <img src="img/шапка/logo.png" alt="логотип">
           <p><span>ТОРГОВЫЙ ДОМ</span><br>Центр Современных Технологий</p>
         </div>
-        <div class="col-lg-5 main-head-info">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 main-head-info">
           <p>Производство средств индивидуальной защиты кожи<br>и глаз для работников промышленности</p>
         </div>
-        <div class="col-lg-3 main-head-contacts">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 main-head-contacts">
           <p class="tell"><span>+7 495</span> 555 77 88<br><span class="address">Москва, ул. Угрешская, д.2, стр. 74</span>
         </div>
       </div> 
@@ -43,25 +43,31 @@
 
   <section id="nav">
     <div class="container">
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="about.html">О КОМПАНИИ</a>
-          </li>
-          <li class="active nav-menu-item">
-            <a href="products.html">КАТАЛОГ ПРОДУКЦИИ</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">ДИЛЕРАМ</a> 
-          </li>
-          <li class="nav-menu-item">
-            <a href="#contacts">КОНТАКТЫ</a>
-          </li>
-        </ul>
-      </nav><!--Навигация-->
+      <div class="row">
+        <div class="col-xs-12 navigator">
+          <nav class="nav">
+            <label class="menuToggle" for="menuCheck"><i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="menuCheck">
+            <ul class="nav-menu">
+              <li class="nav-menu-item">
+                <a href="index.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="about.html">О КОМПАНИИ</a>
+              </li>
+              <li class="active nav-menu-item">
+                <a href="products.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#">ДИЛЕРАМ</a> 
+              </li>
+              <li class="nav-menu-item">
+                <a href="#contacts">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav><!--Навигация-->
+        </div>
+      </div>
     </div>
   </section> 
   
@@ -75,9 +81,9 @@
             <label for="menu" class="toggleMenu"><i class="fa fa-bars fa-2k"><span>Каталог продукции</span></i></label>
               <ul class="check">
                 <li class="check">
-                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
                   <label for="sub_m1" class="toggleSubmenu"></label>
                   <a href="">Очки защитные</a>
+                  <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
                   <ul class="check">
                     <li><a href="">Очки защитные закрытые</a></li>
                     <li><a href="">Очки защитные открытые</a></li>

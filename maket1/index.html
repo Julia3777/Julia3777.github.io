@@ -27,14 +27,14 @@
   <header id="main">
     <div class="container">
       <div class="row main-head">
-        <div class="col-lg-4 main-head-logo">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 main-head-logo">
           <img src="img/шапка/logo.png" alt="логотип">
           <p><span>ТОРГОВЫЙ ДОМ</span><br>Центр Современных Технологий</p>
         </div>
-        <div class="col-lg-5 main-head-info">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 main-head-info">
           <p>Производство средств индивидуальной защиты кожи<br>и глаз для работников промышленности</p>
         </div>
-        <div class="col-lg-3 main-head-contacts">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 main-head-contacts">
           <p class="tell"><span>+7 495</span> 555 77 88<br><span class="address">Москва, ул. Угрешская, д.2, стр. 74</span>
         </div>
       </div>  
@@ -43,32 +43,38 @@
 
   <section id="nav">
     <div class="container">
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li class="active nav-menu-item">
-            <a href="index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="about.html">О КОМПАНИИ</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="products.html">КАТАЛОГ ПРОДУКЦИИ</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#">ДИЛЕРАМ</a> 
-          </li>
-          <li class="nav-menu-item">
-            <a href="#contacts">КОНТАКТЫ</a>
-          </li>
-        </ul>
-      </nav><!--Навигация-->
+      <div class="row">
+        <div class="col-xs-12 navigator">
+          <nav class="nav">
+            <label class="menuToggle" for="menuCheck"><i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="menuCheck">
+            <ul class="nav-menu clearfix">
+              <li class="active nav-menu-item">
+                <a href="index.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="about.html">О КОМПАНИИ</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="products.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#">ДИЛЕРАМ</a> 
+              </li>
+              <li class="nav-menu-item">
+                <a href="#contacts">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </section> 
+  </section> <!--Навигация-->
   
   <section id="main-screen">
     <div class="container">
       <div class="row main-screen-slider">
-        <div class="col-xs-6 col-xs-offset-6 main-screen-slider-box">
+        <div class="col-lg-6 col-lg-offset-6 col-xs-8 col-xs-offset-2 main-screen-slider-box">
           <div class="main-screen-slider-box-item">
             <h1>средства защиты глаз</h1>
             <div class="main-screen-slider-box-item-line"></div>
