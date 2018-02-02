@@ -27,14 +27,14 @@
   <header id="main">
     <div class="container">
       <div class="row main-head">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 main-head-logo">
+        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 main-head-logo">
           <img src="img/шапка/logo.png" alt="логотип">
           <p><span>ТОРГОВЫЙ ДОМ</span><br>Центр Современных Технологий</p>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 main-head-info">
+        <div class="col-lg-5 col-md-5 col-sm-2 col-xs-12 main-head-info">
           <p>Производство средств индивидуальной защиты кожи<br>и глаз для работников промышленности</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 main-head-contacts">
+        <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 main-head-contacts">
           <p class="tell"><span>+7 495</span> 555 77 88<br><span class="address">Москва, ул. Угрешская, д.2, стр. 74</span>
         </div>
       </div> 
@@ -312,10 +312,39 @@ $('.slider-nav').slick({
 
   <!--Слайдер для просмотра похожей продукции-->
   <script>
+  $(document).ready(function(){
     $('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+    breakpoint: 480,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        }
+      }
+    ]
+   }); 
 });
   </script>
     

@@ -493,6 +493,7 @@ label.toggleSubmenu {
   margin-bottom: 50px;
 }
 .company h3 {
+  padding-top: 40px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1018,6 +1019,8 @@ input.message {
 }
 @media all and (max-width: 479px) {
   .main-head-logo img {
+    width: 40px;
+    height: auto;
     padding-bottom: 15px;
   }
   .main-head-logo p {
@@ -1028,13 +1031,13 @@ input.message {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #353535;
-    font-size: 14px;
+    font-size: 12px;
   }
   .main-head-logo p span {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #13aee5;
-    font-size: 15px;
+    font-size: 13px;
   }
   .main-head-info {
     display: none;
@@ -1048,6 +1051,8 @@ input.message {
   .nav-menu {
     display: none;
     position: absolute;
+    left: -15px;
+    right: -15px;
     background: #13aee5;
     z-index: 99;
     padding-left: 0;
@@ -1056,9 +1061,11 @@ input.message {
   .nav-menu li {
     display: inline-block;
     float: none;
+    border-top: 1px solid #119cce;
   }
   .nav-menu li a {
-    border-top: 1px solid #ffffff;
+    padding-left: 15px;
+    padding-right: 51px;
     width: 100vw;
   }
   .nav-menu li a:first-child {
@@ -1068,6 +1075,7 @@ input.message {
     display: inline-block;
     position: relative;
     margin-bottom: 0px;
+    cursor: pointer;
   }
   .menuToggle i.fa-bars {
     color: #ffffff;
@@ -1150,5 +1158,121 @@ input.message {
   .slick-dots li button:active,
   .slick-dots li button:focus {
     background-color: #13aee5;
+  }
+  /* О КОМПАНИИ */
+  .company {
+    margin-bottom: 35px;
+  }
+  .company p.aline {
+    font-size: 13px;
+  }
+  .company p.aline span {
+    font-size: 13px;
+  }
+  .company h3 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 22px;
+  }
+  .company .line {
+    width: 150px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #13aee5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .company p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .company p span.p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2.5;
+  }
+  .company ul li {
+    color: #13aee5;
+  }
+  .company ul li span.li {
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .company_img_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+  }
+  .company_img_box img {
+    width: 340px;
+    height: auto;
+  }
+  /* КОнТАКТЫ */
+  .contacts {
+    margin-top: 30px;
+    margin-bottom: 65px;
+  }
+  .contacts-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .contacts-info .line {
+    width: 100px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #13aee5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .contacts-info-item i {
+    color: #13aee5;
+    vertical-align: top;
+  }
+  .contacts-info-item p {
+    display: inline-block;
+    padding-left: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 21px;
+  }
+  .contacts-form {
+    margin-top: 60px;
+  }
+  .contacts-form button {
+    width: 158px;
+    margin-top: 7px;
+    padding: 14px 28px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #13aee5;
+    border: none;
+    border-radius: 5px;
+  }
+  input {
+    width: 220px;
+    height: 47px;
+    margin-bottom: 2px;
+    outline: none;
+    padding-left: 20px;
+  }
+  input.message {
+    height: 160px;
   }
 }
